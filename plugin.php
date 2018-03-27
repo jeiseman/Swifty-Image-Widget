@@ -225,4 +225,6 @@ class Swifty_Img_Widget extends WP_Widget {
 
 } // end class
 
-add_action( 'widgets_init', create_function( '', 'register_widget("Swifty_Img_Widget");' ) );
+add_action( 'widgets_init', function() {
+     register_widget("Swifty_Img_Widget");
+});
